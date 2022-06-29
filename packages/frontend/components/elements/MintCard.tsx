@@ -14,7 +14,6 @@ interface MintCardProps {
 
 export const MintCard = ({ section, direction, setDirection, handleSelectedValue, handleSelectedImage, index }: MintCardProps) => {
   const [selectedValue, setSelectedValue] = useState<string>("");
-  console.log(section)
   const prepareSelect = (name: string, newDirection: string) => {
     setDirection(newDirection);
     handleSelectedValue(name);
